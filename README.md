@@ -17,6 +17,12 @@ Ground-truth position, heading, and step labels are saved in the example CSV for
 evaluation and plots only. The PDR algorithm estimates its state from sensor and
 external-position inputs.
 
+## Assumptions
+
+The inertial and magnetic sensor package is assumed to be fixed on the user's
+waist. The heading model also assumes that the offset between the sensor frame
+and the walking direction is constant during the walk.
+
 ## Install
 
 ```bash
