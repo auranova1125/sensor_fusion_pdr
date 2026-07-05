@@ -1,0 +1,26 @@
+{
+  "intercept": 0.6963070226923079,
+  "weights": {
+    "step_frequency": 0.041583815578924745,
+    "acc_variance": 0.019383386150201312
+  },
+  "feature_names": [
+    "step_frequency",
+    "acc_variance"
+  ],
+  "feature_mean": [
+    1.4481493622692303,
+    0.3512235480384613
+  ],
+  "feature_std": [
+    0.223008480356125,
+    0.1567276975510416
+  ],
+  "stride_min_m": 0.45,
+  "stride_max_m": 0.95,
+  "training_metrics": {
+    "mae": 0.016701683089600454,
+    "rmse": 0.020877926956802254,
+    "r2": 0.8318412196688186
+  }
+}

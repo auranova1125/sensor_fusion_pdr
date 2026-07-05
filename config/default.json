@@ -1,0 +1,52 @@
+{
+  "sampling_frequency_hz": 100.0,
+  "initial_stationary_s": 5.0,
+  "sensor_axis": {
+    "acc_order": [0, 1, 2],
+    "acc_sign": [1, 1, 1],
+    "gyro_order": [0, 1, 2],
+    "gyro_sign": [1, 1, 1],
+    "mag_order": [0, 1, 2],
+    "mag_sign": [1, 1, 1],
+    "gyro_in_degrees": false,
+    "mounting_heading_offset_rad": 0.0
+  },
+  "step_detection": {
+    "smooth_window_samples": 9,
+    "threshold_mps2": 0.65,
+    "min_interval_s": 0.42,
+    "max_interval_s": 1.25,
+    "window_before_s": 0.28,
+    "window_after_s": 0.35
+  },
+  "stride": {
+    "min_m": 0.45,
+    "max_m": 0.95
+  },
+  "kalman": {
+    "initial_covariance": [0.25, 0.25, 0.05, 0.0004],
+    "process_noise": {
+      "position_per_s": 0.0025,
+      "heading_per_s": 0.0008,
+      "gyro_bias_per_s": 0.000001,
+      "step_position": 0.035
+    },
+    "measurement_noise": {
+      "mag_heading_rad": 0.08,
+      "external_position_m": 0.35
+    },
+    "magnetic_disturbance_ratio": 0.35,
+    "mag_heading_gate_rad": 0.6,
+    "external_position_gate_sigma": 4.0
+  },
+  "synthetic": {
+    "random_seed": 7,
+    "gyro_bias_z_rad_s": 0.015,
+    "acc_bias_mps2": [0.04, -0.03, 0.06],
+    "mag_bias": [0.04, -0.03, 0.015],
+    "gyro_noise_std_rad_s": 0.004,
+    "acc_noise_std_mps2": 0.08,
+    "mag_noise_std": 0.015,
+    "external_position_noise_m": 0.22
+  }
+}

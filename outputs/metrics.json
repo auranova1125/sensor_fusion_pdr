@@ -1,0 +1,17 @@
+{
+  "true_step_count": 25,
+  "detected_step_count": 25,
+  "step_count_error": 0,
+  "mean_estimated_stride_m": 0.6461816576001316,
+  "estimated_total_distance_m": 16.15454144000329,
+  "endpoint_position_error_m": 0.3285115466610728,
+  "trajectory_rmse_m": 0.2560513534354921,
+  "heading_rmse_rad": 0.02866570164396564,
+  "heading_rmse_deg": 1.6424237209804569,
+  "stride_mae_m": 0.03579559200133932,
+  "estimated_gyro_bias_rad_s": 0.01461756665241506,
+  "mag_accepted": 2846,
+  "mag_rejected": 0,
+  "external_position_accepted": 13,
+  "external_position_rejected": 0
+}
